@@ -22,6 +22,9 @@ $("a.beautiful").append("<img src='http://66.media.tumblr.com/4a520e91f7f4589f66
 
 $("a.handsome").append("<img style='background-color: white' src='http://67.media.tumblr.com/2ed315499bc33b9acc7bb143964f3b24/tumblr_obc39ec8J71uupkrso1_250.png'>");
 
+// touch screen click animation
+
+$('ul li').bind('touchstart', function() {});
 
 
 
