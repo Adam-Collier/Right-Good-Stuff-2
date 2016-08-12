@@ -31,7 +31,18 @@ nav {
     float: left;
     width: 25vw;
     height: 16vw;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative; }
     .images li img {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      position: absolute; }
+
+li:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.15);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2; }
