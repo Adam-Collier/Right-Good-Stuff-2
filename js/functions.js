@@ -26,6 +26,16 @@ $("a.handsome").append("<img style='background-color: white' src='http://67.medi
 
 $('ul li').bind('touchstart', function() {});
 
+// about section opacity
 
+$("nav a.nav-about").click(function(){
+  $(".back-overlay").addClass("open");
+  $("body").addClass("overflow");
+});
+
+$(".back-overlay").click(function(){
+	$(".back-overlay").removeClass("open");
+	$("body").removeClass("overflow");
+});
 
 });
