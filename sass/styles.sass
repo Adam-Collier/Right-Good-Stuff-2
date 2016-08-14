@@ -1,3 +1,7 @@
+@import 'https://fonts.googleapis.com/css?family=Lato'
+@import 'https://fonts.googleapis.com/css?family=Fira+Sans'
+@import 'https://fonts.googleapis.com/css?family=Asap'
+
 html
 	padding: 0
 	margin: 0
@@ -80,6 +84,61 @@ li:hover
 	transition: all 400ms ease-in-out
 	opacity: 0
 
+.back-overlay
+	position: absolute 
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	height: 100%
+	background-color: rgba(0,0,0,0.6)
+	display: flex
+	justify-content: center
+	align-items: center
+	opacity: 0
+	pointer-events: none
+	transition: all 400ms ease-in-out
+	overflow: hidden
+
+
+.about 
+	position: relative
+	background-color: rgba(250,250,250,0.95)
+	width: 500px
+	height: 300px
+	text-align: center
+	border-radius: 2px
+	opacity: 0
+	transition: all 600ms ease-in-out 300ms
+	
+	h2
+		padding: 10px 20px 0px 20px
+		font-family: Asap
+
+	p 
+		padding: 5px 55px 10px 55px
+		font-family: Asap
+		text-align: justify 
+		line-height: 1.8
+		font-size: 18px
+
+
+.open
+	opacity: 1
+	pointer-events: auto
+	overflow: hidden
+	.about
+		opacity: 1
+
+
+.overflow
+	overflow: hidden
+
+
+
+
+
+
 @media only screen and (max-width: 900px)
 	ul
 		li
@@ -90,6 +149,14 @@ li:hover
 		li
 			width: 50vw
 			height: 32vw
+	.about
+		margin-top: -15%
+		width: 300px
+		height: 235px
+
+		p 
+			font-size: 14px
+			padding: 0px 30px 10px 30px
 
 
 
